@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "59f10d16-c317-4b74-ac2b-817184e44a71",
+		"name": "Job Search",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32885948"
+	},
+	"item": [
+		{
+			"name": "Search Java Jobs in Moscow",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}?description={{description}}&location={{location}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "{{description}}"
+						},
+						{
+							"key": "location",
+							"value": "{{location}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
